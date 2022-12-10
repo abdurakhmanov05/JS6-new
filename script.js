@@ -33,7 +33,7 @@ let types = {
 let obj = Object.assign({}, user, description)
 let keys = Object.keys(obj)
 let values = Object.values(obj)
-let newObj =  Object.assign({}, keys, values)
+let let newObj = keys.concat(values)
 
     if (newObj === 'number') {
         types.number.push(newObj)
