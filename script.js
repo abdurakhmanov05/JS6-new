@@ -33,7 +33,7 @@ let types = {
 let obj = Object.assign({}, user, description)
 let keys = Object.keys(obj)
 let values = Object.values(obj)
-let let newObj = keys.concat(values)
+let newObj = keys.concat(values)
 
     user.filter(item => {
         if (newObj === 'number') {
