@@ -35,7 +35,8 @@ let keys = Object.keys(obj)
 let values = Object.values(obj)
 let let newObj = keys.concat(values)
 
-    if (newObj === 'number') {
+    user.filter(item => {
+        if (newObj === 'number') {
         types.number.push(newObj)
     } else if (newObj === 'string') {
         types.string.push(newObj)
@@ -44,7 +45,7 @@ let let newObj = keys.concat(values)
     } else {
         types.boolean.push(newObj)
     }
-
+    })
 console.log(obj);
 console.log(keys);
 console.log(values);
